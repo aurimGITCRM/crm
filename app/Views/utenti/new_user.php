@@ -92,7 +92,7 @@
 <br>
 <?= validation_list_errors() ?>
 
-<?=form_open('/index.php/modify_user'); ?>
+<?=form_open('modify_user'); ?>
 
 
 <div class="row" id="new_user">
