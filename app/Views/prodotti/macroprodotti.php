@@ -86,7 +86,7 @@
         <a href="javascript:void(0)" onclick="location.href = 'Products'" class="btn btn-primary btn-lg"><i class="material-icons md-18">people</i> Lista prodotti</a>
     </div>
     <div class="col-md-2">
-		<a href="/index.php/InsertMacroProducts" class='btn btn-success btn-lg'><i class="material-icons">edit</i> Nuovo macro prodotto</a>
+		<a href="InsertMacroProducts" class='btn btn-success btn-lg'><i class="material-icons">edit</i> Nuovo macro prodotto</a>
 	</div>
 </div>
 <br>

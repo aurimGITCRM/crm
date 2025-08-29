@@ -86,7 +86,7 @@
         <a href="javascript:void(0)" onclick="location.href = 'Products'" class="btn btn-primary btn-md">Prodotti</a>
     </div>
     <div class="col-lg-1 col-md-3 col-xs-12">
-		<a href="/index.php/InsertProducts" class='btn btn-success btn-md mt-4 m-sm-0'><i class="material-icons">edit</i> Nuovo</a>
+		<a href="InsertProducts" class='btn btn-success btn-md mt-4 m-sm-0'><i class="material-icons">edit</i> Nuovo</a>
 	</div>
 </div>
 <br>

@@ -87,13 +87,13 @@
 	</style>
 
 <h2><?=$title?></h2>
-<a href="/Attivita" class="btn btn-secondary mt-3">
+<a href="Attivita" class="btn btn-secondary mt-3">
 	<i class="material-icons">arrow_back</i> Indietro    
 </a>
 <br><br>
 <?= validation_list_errors() ?>
 
-<?=form_open('/modify_attivita'); ?>
+<?=form_open('modify_attivita'); ?>
 <div id="new_user">
 	<div class="col-lg-2 col-12">
 		<div class="row">

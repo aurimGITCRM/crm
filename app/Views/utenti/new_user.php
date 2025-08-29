@@ -86,7 +86,7 @@
 	</style>
 
 <h2><?=$title?></h2>
-<a href="/Users" class="btn btn-secondary mt-3">
+<a href="Users" class="btn btn-secondary mt-3">
 	<i class="material-icons">arrow_back</i> Indietro    
 </a>
 <br>
