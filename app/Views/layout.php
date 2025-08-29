@@ -80,7 +80,7 @@
 	<div class="container-fluid p-0">
 
 		<?php //if (!isset($flag_header_readonly) || $flag_header_readonly != true) : ?>
-			<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" style="margin-bottom:25px;">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom nav-bar-aurim" style="margin-bottom:25px;">
 				<div class="container-fluid">
 					<h3><span style="color:black">CRM</span> <span style="color:orange">AURIM</span></h3>
 					<a class="navbar-brand m-0 p-0" href="/smartdesk/home/">

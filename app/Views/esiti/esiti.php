@@ -95,7 +95,7 @@
 	</script>
 </head>
 <body>
-<h2><?=strtoupper($title)?></h2><br>
+<h1><?=strtoupper($title)?></h1><br>
 
 <div class="row">
 	<div class="col-lg-2 col-6">
