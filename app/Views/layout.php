@@ -202,13 +202,13 @@
 											<i class="material-icons md-18">people</i> <?=$_SESSION['user_login']['nome'] . " " .$_SESSION['user_login']['cognome']?>
 										</a>
 										<ul class="dropdown-menu" aria-labelledby="adminDropdown">
-											<li><a class="dropdown-item" onclick="location.href='/CampagneContatti';">Campagne</a></li>
+											<li><a class="dropdown-item" onclick="location.href='CampagneContatti';">Campagne</a></li>
 										</ul>
 									</li>
 									<?php endif; ?>
 
 									<li class="nav-item">
-										<a class="nav-item nav-link" title="Logout" href="/LogOut/">
+										<a class="nav-item nav-link" title="Logout" href="LogOut/">
 											<i class="material-icons md-18">power_settings_new</i> <?= ""//$this->lang->line('smartdesk_nav_logout_button'); ?>
 										</a>
 									</li>
