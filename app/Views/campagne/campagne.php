@@ -99,7 +99,7 @@
 
 <div class="row">
 	<div class="col-lg-2 col-6">
-		<a href="javascript:void(0)" onclick="location.href = '/Campagne'" class="btn btn-primary btn-md">Lista campagne</a>
+		<a href="javascript:void(0)" onclick="location.href = 'Campagne'" class="btn btn-primary btn-md">Lista campagne</a>
 	</div>
 	<div class="col-lg-2 col-6">
 		<a href="/InsertCampagna" class='btn btn-success btn-md'><i class="material-icons">edit</i> Nuova</a>

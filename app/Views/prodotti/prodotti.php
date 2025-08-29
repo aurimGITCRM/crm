@@ -80,10 +80,10 @@
 <br>
 <div class="row">
 	<div class="col-lg-1 col-md-3 col-6">
-		<a href="javascript:void(0)" onclick="location.href = '/MacroProducts'" class="btn btn-primary btn-md">Macro prodotti</a>
+		<a href="javascript:void(0)" onclick="location.href = 'MacroProducts'" class="btn btn-primary btn-md">Macro prodotti</a>
 	</div>
     <div class="col-lg-1 col-md-3 col-6 ">
-        <a href="javascript:void(0)" onclick="location.href = '/Products'" class="btn btn-primary btn-md">Prodotti</a>
+        <a href="javascript:void(0)" onclick="location.href = 'Products'" class="btn btn-primary btn-md">Prodotti</a>
     </div>
     <div class="col-lg-1 col-md-3 col-xs-12">
 		<a href="/index.php/InsertProducts" class='btn btn-success btn-md mt-4 m-sm-0'><i class="material-icons">edit</i> Nuovo</a>

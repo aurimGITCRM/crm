@@ -135,7 +135,7 @@
 		<div class="alert alert-success">La password è stata aggiornata correttamente</script>
 		<script>
 			setTimeout(function(){
-					location.href = '/LogOut';
+					location.href = 'LogOut';
 				},3000);
 		</script>
 	<?php endif; ?>

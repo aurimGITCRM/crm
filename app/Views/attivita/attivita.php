@@ -100,7 +100,7 @@
 
 <div class="row">
 	<div class="col-lg-2 col-6">
-		<a href="javascript:void(0)" onclick="location.href = '/Attivita'" class="btn btn-primary btn-md">Lista attività</a>
+		<a href="javascript:void(0)" onclick="location.href = 'Attivita'" class="btn btn-primary btn-md">Lista attività</a>
 	</div>
 	<div class="col-lg-2 col-6">
 		<a href="/InsertAttivita" class='btn btn-success btn-md'><i class="material-icons">edit</i> Nuova</a>

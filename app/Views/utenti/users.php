@@ -100,10 +100,10 @@
 
 <div class="row">
 	<div class="col-lg-1 col-6">
-		<a href="javascript:void(0)" onclick="location.href = '/Users'" class="btn btn-primary btn-md"><i class="material-icons md-18">people</i> Lista utenti</a>
+		<a href="javascript:void(0)" onclick="location.href = 'Users'" class="btn btn-primary btn-md"><i class="material-icons md-18">people</i> Lista utenti</a>
 	</div>
 	<div class="col-lg-1 col-6">
-		<a href="/index.php/InsertUser" class='btn btn-success btn-md'><i class="material-icons">edit</i> Nuovo</a>
+		<a href="InsertUser" class='btn btn-success btn-md'><i class="material-icons">edit</i> Nuovo</a>
 	</div>
 </div>
 <br>
