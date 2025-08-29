@@ -302,7 +302,7 @@
 </script>
 
 <?php if(empty($hide)): ?>
-	<a href="/ContattiWebVista" class="btn btn-secondary mt-3">
+	<a href="ContattiWebVista" class="btn btn-secondary mt-3">
 		<i class="material-icons">arrow_back</i> Indietro    
 	</a>
 	<br><br>
@@ -330,7 +330,7 @@
 
 	<?= validation_list_errors() ?>
 
-		<?=form_open('/index.php/modify_contatto_webvista',array('id' => 'modify_contatto')); ?>
+		<?=form_open('modify_contatto_webvista',array('id' => 'modify_contatto')); ?>
 		<div class="row" id="new_user" style="margin-left:0px;">
 				<div class="col-lg-3">
 					<div class="row">

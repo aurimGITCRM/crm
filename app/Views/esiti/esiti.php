@@ -102,7 +102,7 @@
 		<a href="javascript:void(0)" onclick="location.href = 'Esiti'" class="btn btn-primary btn-md">Lista esiti</a>
 	</div>
 	<div class="col-lg-2 col-6">
-		<a href="/InsertEsito" class='btn btn-success btn-md'><i class="material-icons">edit</i> Nuovo</a>
+		<a href="InsertEsito" class='btn btn-success btn-md'><i class="material-icons">edit</i> Nuovo</a>
 	</div>
 	<!-- <div class="col-md-2">
 	<a href="/index.php/ListaFilePDF"><input type="button" class="btn btn-primary btn-lg" value="Lista file PDF"></a>

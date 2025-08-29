@@ -87,13 +87,13 @@
 	</style>
 
 <h2><?=$title?></h2>
-<a href="/Esiti" class="btn btn-secondary mt-3 col-lg-1">
+<a href="Esiti" class="btn btn-secondary mt-3 col-lg-1">
     	<i class="material-icons">arrow_back</i> Indietro    
 </a>
 <br><br>
 <?= validation_list_errors() ?>
 
-<?=form_open('/modify_esito'); ?>
+<?=form_open('modify_esito'); ?>
 <div id="new_user">
 	<div class="col-md-2">
 		<div class="row">

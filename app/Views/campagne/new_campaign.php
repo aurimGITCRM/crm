@@ -85,7 +85,7 @@
 	}
 	</style>
 <h2><?=$title?></h2>
-<a href="/Campagne" class="btn btn-secondary mt-3">
+<a href="Campagne" class="btn btn-secondary mt-3">
 	<i class="material-icons">arrow_back</i> Indietro    
 </a>
 <br><br>
@@ -118,7 +118,7 @@
 		<h2><?=$title?></h2>
 		<?= validation_list_errors() ?>
 
-		<?=form_open('/modify_campagna'); ?>
+		<?=form_open('modify_campagna'); ?>
 			<div id="new_user">
 				<div class="col-md-2">
 					<div class="row">

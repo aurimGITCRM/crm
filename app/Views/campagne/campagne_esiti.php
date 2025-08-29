@@ -78,7 +78,7 @@
                                 <td style="border: 1px solid;"><?=$es['campNome'];?></td>
                                 <td style="border: 1px solid;"><?=$es['nomeEsito']?></td>
                                 <td style="border: 1px solid;border-left:0;">
-                                    <a href="/CampagneEsitiDestinazioni/<?=$es['campid_Fk']?>/<?=$es['idEsito_Fk']?>" class="btn btn-primary">Gestisci destinazioni</a>
+                                    <a href="CampagneEsitiDestinazioni/<?=$es['campid_Fk']?>/<?=$es['idEsito_Fk']?>" class="btn btn-primary">Gestisci destinazioni</a>
                                     <!-- ELIMINA -->
                                     <a href="javascript:void(0)" onclick="deleteCE(<?=$es['campid_Fk']?>,<?=$es['idEsito_Fk']?>)" class='btn btn-danger'><i class="material-icons">clear</i></a>
                                 </td>

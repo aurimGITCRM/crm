@@ -87,13 +87,13 @@
 	</style>
 
 <h2><?=$title?></h2>
-<a href="/MacroProducts" class="btn btn-secondary mt-3">
+<a href="MacroProducts" class="btn btn-secondary mt-3">
 	<i class="material-icons">arrow_back</i> Indietro    
 </a>
 <br><br>
 <?= validation_list_errors() ?>
 
-<?=form_open('/index.php/modify_macro_prodotto'); ?>
+<?=form_open('modify_macro_prodotto'); ?>
 
 <div class="row" id="new_user">
 	<div class="col-md-2">

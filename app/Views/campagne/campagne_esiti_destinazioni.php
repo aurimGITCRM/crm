@@ -163,7 +163,7 @@
             method: "POST",
             data: $('#destinazioni_esiti').serialize(),
             success: function(res) {
-				location.href = "/CampagneEsitiDestinazioni/<?=$campid?>/<?=$esito['esito']['idEsito']?>";
+				location.href = "CampagneEsitiDestinazioni/<?=$campid?>/<?=$esito['esito']['idEsito']?>";
             },
             error: function(err) {
                 console.log(err);
@@ -174,7 +174,7 @@
 <div align="center"><h1><?=strtoupper($title)?></h1></div>
 <div style="width:90%" id="campagne_esiti_destinazioni">
     <br><br>
-    <?=form_open('/index.php/CampagneEsitiDestinazioni/' . $campid . '/' . $esito['esito']['idEsito'],array('id' => 'destinazioni_esiti')); ?>
+    <?=form_open('CampagneEsitiDestinazioni/' . $campid . '/' . $esito['esito']['idEsito'],array('id' => 'destinazioni_esiti')); ?>
             <?= csrf_field() ?>
             <input type="hidden" name="campid" value="<?=$campid?>">
             <input type="hidden" name="esitoid" value="<?=$esito['esito']['idEsito']?>">

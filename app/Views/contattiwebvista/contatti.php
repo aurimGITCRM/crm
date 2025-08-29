@@ -103,7 +103,7 @@
 		<a href="javascript:void(0)" onclick="location.href = 'ContattiWebVista'" class="btn btn-primary btn-md">Lista contatti</a>
 	</div>
 	<div class="col-lg-2 col-6">
-		<a href="/InsertContattoWebVista" class='btn btn-success btn-md'><i class="material-icons">edit</i> Nuovo</a>
+		<a href="InsertContattoWebVista" class='btn btn-success btn-md'><i class="material-icons">edit</i> Nuovo</a>
 	</div>
 </div>
 <br>
