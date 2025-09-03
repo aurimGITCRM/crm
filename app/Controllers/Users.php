@@ -117,14 +117,7 @@ class Users extends BaseController
     public function delUser($id = NULL)
     {
         $this->model->delUser($id);
-        
-        $data = [];
-        $data['title'] = "Utenti";
-        $data_template = [];
-        $data_template = $this->model->getUsers();
-        $data['template_user'] = view('/utenti/template_user',$data_template);
-        $data['template'] = view('/utenti/users',$data);
-        return view('layout', $data);
+        return redirect()->to('/Users');
     }
 
     public function resetPwd($id)
