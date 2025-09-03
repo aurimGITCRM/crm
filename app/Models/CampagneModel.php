@@ -68,7 +68,7 @@ class CampagneModel extends Model
         $data_upd = array(
             'campNome' => $data['name'],
             'campTipo' => $data['tipo'],
-            'idUtente_Fk'  => 15,
+            'idUtente_Fk'  => $_SESSION['user_login']['id'],
             'data' => date('Y-m-d H:i:s'),
         );
         

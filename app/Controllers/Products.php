@@ -81,11 +81,7 @@ class Products extends BaseController
     public function delete_macro_products($id)
     {
         $this->model->DeleteMacroProducts($id);
-        $data = [];
-        $data['title'] = "Macro prodotti";
-        $data['macroprodotti'] = $this->model->getMacroProducts();
-        $data['template'] = view('/prodotti/macroprodotti',$data);
-        return view('layout', $data);
+        return redirect()->to('/MacroProducts');
     }
 
     public function get_products()
@@ -157,11 +153,6 @@ class Products extends BaseController
     public function delete_products($id)
     {
         $this->model->DeleteProducts($id);
-        $data = [];
-        $data['title'] = "Prodotti";
-        $data['macroprodotti'] = $this->model->getMacroProducts();
-        $data['prodotti'] = $this->model->getProducts();
-        $data['template'] = view('/prodotti/prodotti',$data);
-        return view('layout', $data);
+        return redirect()->to('/Products');
     }
 }

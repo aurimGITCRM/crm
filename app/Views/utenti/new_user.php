@@ -57,7 +57,7 @@
 	}
 
 	#container {
-		margin: 10px;
+		margin: 30px;
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
 	}
@@ -86,79 +86,79 @@
 	</style>
 
 <h2><?=$title?></h2>
-<a href="Users" class="btn btn-secondary mt-3">
+<a href="/Users" class="btn btn-secondary mt-3" style="margin-left: 20px;">
 	<i class="material-icons">arrow_back</i> Indietro    
 </a>
 <br>
 <?= validation_list_errors() ?>
 
-<?=form_open('modify_user'); ?>
-
-
-<div class="row" id="new_user">
-	<div class="col-md-2">
-		<div class="row">
-			Tipo: <select name="tipo" id="tipo" class="form-control">
-						<option value="">Seleziona...</option>
-						<option value="schedatore" <?= !empty($user['tipo']) && $user['tipo'] == 'schedatore' ? " selected='selected'" : "" ?>>Schedatore</option>
-						<option value="venditore" <?= !empty($user['tipo']) && $user['tipo'] == 'venditore' ? " selected='selected'" : "" ?>>Venditore</option>
-						<option value="admin" <?= !empty($user['tipo']) && $user['tipo'] == 'admin' ? " selected='selected'" : "" ?>>Admin</option>
-						<option value="sysadmin" <?= !empty($user['tipo']) && $user['tipo'] == 'sysadmin' ? " selected='selected'" : "" ?>>Sysadmin</option>
-				  </select>
-		</div>	
-		<div class="row">
-			Username: <input id="username" name="username" type="text" class="form-control" value="<?= !empty($user['username']) ? $user['username'] : set_value('username') ?>" autocomplete="off">
-		</div>
-	</div>
-	<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-6" style="margin-left:-15px;">	
-							Password: <input id="password" name="password" type="<?= empty($user['password']) ? "text" : "hidden"?>" class="form-control" value="<?= !empty($user['password']) ? $user['password'] : set_value('password') ?>" autocomplete="off">
-							<input id="password_visual" name="password_visual" <?= !empty($user['password']) ? " disabled='disabled'" : ""?> type="<?= empty($user['password']) ? "hidden" : "text"?>" class="form-control" value="<?= !empty($user['password']) ? $user['password'] : set_value('password') ?>" autocomplete="off">
+<div style="margin-left: 30px;margin-top:20px;">
+				<?=form_open('modify_user'); ?>
+				<div class="row" id="new_user">
+					<div class="col-md-2">
+						<div class="row">
+							Tipo: <select name="tipo" id="tipo" class="form-control">
+										<option value="">Seleziona...</option>
+										<option value="schedatore" <?= !empty($user['tipo']) && $user['tipo'] == 'schedatore' ? " selected='selected'" : "" ?>>Schedatore</option>
+										<option value="venditore" <?= !empty($user['tipo']) && $user['tipo'] == 'venditore' ? " selected='selected'" : "" ?>>Venditore</option>
+										<option value="admin" <?= !empty($user['tipo']) && $user['tipo'] == 'admin' ? " selected='selected'" : "" ?>>Admin</option>
+										<option value="sysadmin" <?= !empty($user['tipo']) && $user['tipo'] == 'sysadmin' ? " selected='selected'" : "" ?>>Sysadmin</option>
+								</select>
+						</div>	
+						<div class="row">
+							Username: <input id="username" name="username" type="text" class="form-control" value="<?= !empty($user['username']) ? $user['username'] : set_value('username') ?>" autocomplete="off">
+						</div>
+					</div>
+					<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6" style="margin-left:-15px;">	
+											Password: <input id="password" name="password" type="<?= empty($user['password']) ? "text" : "hidden"?>" class="form-control" value="<?= !empty($user['password']) ? $user['password'] : set_value('password') ?>" autocomplete="off">
+											<input id="password_visual" name="password_visual" <?= !empty($user['password']) ? " disabled='disabled'" : ""?> type="<?= empty($user['password']) ? "hidden" : "text"?>" class="form-control" value="<?= !empty($user['password']) ? $user['password'] : set_value('password') ?>" autocomplete="off">
+								</div>
+								<div class="col-md-6">	
+									<?php if(!empty($user['password'])): ?>
+										<a href="javascript:void(0)" onclick="if(confirm('Sei sicuro di resettare la password?')){location.href='/ResettaPwd/<?=$user['id']?>';}" class="btn btn-primary btn-md" style="margin-top:20px;">Resetta Password</a>	
+									<?php endif; ?>
+								</div>
+							</div>
+							<?php if(!empty($reset_pwd)): ?>
+								<div class="row">					
+									<div class="alert alert-success"><?=$reset_pwd?></div>					
+								</div>
+							<?php endif; ?>
+					</div>
+						<div class="col-md-2">
+						<div class="row">
+							<input type="hidden" name="id_update" value="<?=$user['id']?>">
+							Nome: <input id="name" name="name" type="text" class="form-control" value="<?= !empty($user['nome']) ? $user['nome'] : set_value('name') ?>" autocomplete="off">
+						</div>
+						<div class="row">
+							Cognome: <input id="surname" name="surname" type="text" class="form-control" value="<?= !empty($user['cognome']) ? $user['cognome'] : set_value('surname') ?>" autocomplete="off">
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<input type="radio" name="sesso" value="M" <?php if($user['sesso'] == 'M') echo " checked='checked'" ?>>
+								<label>Maschio</label>
+							</div>
+							<div class="col-lg-6">
+								<input type="radio" name="sesso" value="F" <?php if($user['sesso'] == 'F') echo " checked='checked'" ?>>
+								<label>Femmina</label>
+							</div>
+						</div>
+						<div class="row">
+							Email: <input id="email" name="email" type="text" class="form-control" value="<?=$user['email']?>" autocomplete="off">
+						</div>
+						<div class="row">
+							<input type="hidden" id="data_scadenza" name="data_scadenza">
+							Data scadenza: <input id="data_scadenza_cal" type="text" class="form-control" value="" autocomplete="off">
+						</div>
+						<div class="row">
+							<input type="submit" name="submit" class="btn btn-primary btn-md" value="Salva" style="margin-top:20px;">
+						</div>
+					</div>
 				</div>
-				<div class="col-md-6">	
-					<?php if(!empty($user['password'])): ?>
-						<a href="javascript:void(0)" onclick="if(confirm('Sei sicuro di resettare la password?')){location.href='/ResettaPwd/<?=$user['id']?>';}" class="btn btn-primary btn-md" style="margin-top:20px;">Resetta Password</a>	
-					<?php endif; ?>
-				</div>
+				<?=form_close()?>
 			</div>
-			<?php if(!empty($reset_pwd)): ?>
-				<div class="row">					
-					<div class="alert alert-success"><?=$reset_pwd?></div>					
-				</div>
-			<?php endif; ?>
-	</div>
-		<div class="col-md-2">
-		<div class="row">
-			<input type="hidden" name="id_update" value="<?=$user['id']?>">
-			Nome: <input id="name" name="name" type="text" class="form-control" value="<?= !empty($user['nome']) ? $user['nome'] : set_value('name') ?>" autocomplete="off">
-		</div>
-		<div class="row">
-			Cognome: <input id="surname" name="surname" type="text" class="form-control" value="<?= !empty($user['cognome']) ? $user['cognome'] : set_value('surname') ?>" autocomplete="off">
-		</div>
-		<div class="row">
-			<div class="col-lg-6">
-				<input type="radio" name="sesso" value="M" <?php if($user['sesso'] == 'M') echo " checked='checked'" ?>>
-				<label>Maschio</label>
-			</div>
-			<div class="col-lg-6">
-				<input type="radio" name="sesso" value="F" <?php if($user['sesso'] == 'F') echo " checked='checked'" ?>>
-				<label>Femmina</label>
-			</div>
-		</div>
-		<div class="row">
-			Email: <input id="email" name="email" type="text" class="form-control" value="<?=$user['email']?>" autocomplete="off">
-		</div>
-		<div class="row">
-			<input type="hidden" id="data_scadenza" name="data_scadenza">
-			Data scadenza: <input id="data_scadenza_cal" type="text" class="form-control" value="" autocomplete="off">
-		</div>
-		<div class="row">
-			<input type="submit" name="submit" class="btn btn-primary btn-md" value="Salva" style="margin-top:20px;">
-		</div>
-	</div>
-</div>
-<?=form_close()?>
 <script>
 	$('#data_scadenza_cal').datepicker({
 			closeText: 'Chiudi',

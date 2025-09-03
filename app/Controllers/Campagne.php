@@ -93,7 +93,6 @@ class Campagne extends BaseController
             return view('layout', $data_camp);
         }
 
-
         $this->model->modify_campagna($data);
         $data = [];
         $data['title'] = "Campagne";
@@ -114,13 +113,7 @@ class Campagne extends BaseController
         $this->delCampagneMacro($campId);
         $this->model->delCamp($campId);
 
-        $data = [];
-        $data['title'] = "Campagne";
-        $data_template = [];
-        $data_template = $this->model->getCampagne();
-        $data['template_campagne'] = view('/campagne/template_campagne',$data_template);
-        $data['template'] = view('/campagne/campagne',$data);
-        return view('layout', $data);
+        return redirect()->to('/Campagne');
     }
     
     private function get_campagne_utenti($campId = null,$utenteId = null)
