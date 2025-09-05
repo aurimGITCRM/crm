@@ -29,6 +29,15 @@ class Appointment extends BaseController
         helper('form');
     }
 
+    public function testEmail()
+    {
+        $data_cont = $this->contmodel->get_contatto(1);
+        $emailmanager = new EmailManager();
+        $template_mail = view('/email/email_presentazione_contattiwebvista',$data_cont);
+        $emailmanager->sendMail($template_mail,"AURIM - Presentazione",$data_cont['contatto']['email_1']);
+        $data_upd['invio_presentazione'] = 1;
+    }
+
     public function createApp()
     {
         $data = $this->request->getPost();
