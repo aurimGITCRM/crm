@@ -125,8 +125,8 @@ class ContattiWebVistaModel extends Model
 
         if(isset($id) && !empty($id))
         {
+            echo $this->getContatti($id);die;
             $data['contatto'] = $this->getContatti($id)['contatti'][0];
-            echo $data['contatto'];die;
             $data['title']='Modifica contatto';
         }
 
