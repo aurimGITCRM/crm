@@ -37,6 +37,8 @@ class ContattiWebVistaModel extends Model
         if(!empty($attId))
             $sql .= " AND A.id = " . $id;
 
+        return $sql;
+
         $query = $this->db->query($sql);
 
         foreach ($query->getResult('array') as $row) 
@@ -124,6 +126,7 @@ class ContattiWebVistaModel extends Model
         if(isset($id) && !empty($id))
         {
             $data['contatto'] = $this->getContatti($id)['contatti'][0];
+            echo $data['contatto'];die;
             $data['title']='Modifica contatto';
         }
 
