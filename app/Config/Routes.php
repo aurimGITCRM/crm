@@ -125,6 +125,8 @@ $routes->get('/send_mail_lsta_mailchimp', 'Batch::sendMailListMailChimp');
 $routes->get('/upload_contacts', 'UploadController::index');
 $routes->post('/upload_contacts', 'UploadController::upload');
 
+$routes->get('/testEmail', 'Appointment::testEmail');
+
 
 
 
