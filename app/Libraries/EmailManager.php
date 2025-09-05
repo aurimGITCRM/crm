@@ -33,11 +33,10 @@ class EmailManager
             'wordWrap' => true,
         ];
         
-
         $email->initialize($config);
 
         // Set email parameters
-        //$email->setFrom('app-noreply@etiqube.com', 'AURIM');
+        // $email->setFrom('app-noreply@etiqube.com', 'AURIM');
         $email->setFrom('noreply@crmaurim.it', 'AURIM');
         $email->setTo($to);
 
