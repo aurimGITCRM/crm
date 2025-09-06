@@ -18,11 +18,11 @@
                             <td style="border: 1px solid;"><?=$esito['data'];?></td>
                             <td style="border: 1px solid;border-right:0;">
                                 <!-- MODIFICA -->
-                                <a href="<?=base_url()?>UpdateEsito/<?=$esito['idEsito']?>" class='btn btn-warning'><i class="material-icons">edit</i></a>
+                                <a href="/index.php/UpdateEsito/<?=$esito['idEsito']?>" class='btn btn-warning'><i class="material-icons">edit</i></a>
                             </td>
                             <td style="border: 1px solid;border-left:0;">
                                 <!-- ELIMINA -->
-                                <a href="javascript:void(0)" onclick="if(confirm('Sei sicuro di cancellare esito e esito in tutte le campagne associate?')){location.href='<?=base_url()?>delEsito/<?=$esito['idEsito']?>';}" class='btn btn-danger'><i class="material-icons">clear</i></a>
+                                <a href="javascript:void(0)" onclick="if(confirm('Sei sicuro di cancellare esito e esito in tutte le campagne associate?')){location.href='delEsito/<?=$esito['idEsito']?>';}" class='btn btn-danger'><i class="material-icons">clear</i></a>
                             </td>
                         </tr>
                 <?php endforeach; ?>
