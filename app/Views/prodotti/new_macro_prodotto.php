@@ -96,7 +96,7 @@
 <?=form_open('modify_macro_prodotto'); ?>
 
 <div class="row" id="new_user">
-	<div class="col-md-2">
+	<div class="col-lg-2 col-12">
 		<div class="row">
 			<input type="hidden" name="id_update" value="<?=$macroprodotto[0]['macroId'] ?? ""?>">
 			Nome: <input id="name" name="name" type="text" class="form-control" value="<?= !empty($macroprodotto[0]['nome']) ? $macroprodotto[0]['nome'] : set_value('name') ?>" autocomplete="off">
