@@ -84,6 +84,11 @@
 	{
 		color:red;
 	}
+
+	.macrop
+	{
+    	margin-left: 15px;
+	}
 	</style>
 
 <h2><?=$title?></h2>
@@ -93,7 +98,7 @@
 <br><br>
 <?= validation_list_errors() ?>
 
-<?=form_open('modify_macro_prodotto'); ?>
+<?=form_open('modify_macro_prodotto',array('id' => 'macrop')); ?>
 
 <div class="row" id="new_user">
 	<div class="col-lg-2 col-12">
