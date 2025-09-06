@@ -124,7 +124,7 @@
                                 <td style="border: 1px solid;text-align:center;"><?=$c['prodotto'];?></td>
                                 <td style="border: 1px solid;text-align:center;"><?=$c['servizio_digitale'];?></td>
                                 <td style="border: 1px solid;border-left:0;text-align:center;">
-                                    <a href="/CampagneContattoUtenteWebVista/<?=$c['campId_Fk'];?>/<?=$c['contId_Fk'];?>"  class='btn btn-success icon-link'>Gestisci contatto <i class="material-icons">edit</i></a>
+                                    <a href="/index.php/CampagneContattoUtenteWebVista/<?=$c['campId_Fk'];?>/<?=$c['contId_Fk'];?>"  class='btn btn-success icon-link'>Gestisci contatto <i class="material-icons">edit</i></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

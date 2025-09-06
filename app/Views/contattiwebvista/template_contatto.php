@@ -20,7 +20,7 @@
 					</td>
 					<td style="border: 1px solid;border-left:0;">
 						<!-- ELIMINA -->
-						<a href="delAttivita/<?=$contatto['contId']?>" class='btn btn-danger'><i class="material-icons">clear</i></a>
+						<a href="delContattoWebVista/<?=$contatto['contId']?>" class='btn btn-danger'><i class="material-icons">clear</i></a>
 					</td>
 				</tr>
 		<?php endforeach; ?>

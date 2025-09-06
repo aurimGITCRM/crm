@@ -188,13 +188,7 @@ class ContattiWebVista extends BaseController
     public function delContatto($id = NULL)
     {
         $this->model->delCont($id);
-        $data = [];
-        $data['title'] = "Contatti";
-        $data_template = [];
-        $data_template = $this->model->getContatti();
-        $data['template_user'] = view('/contattiwebvista/template_contatto',$data_template);
-        $data['template'] = view('/contattiwebvista/contatti',$data);
-        return view('layout', $data);
+        return redirect()->to('/ContattiWebVista');
     }
 
     public function updateCampagneContattiWebVistaAjax()
