@@ -16,11 +16,11 @@
 					<td style="border: 1px solid;"><?=$att['nome'];?></td>
 					<td style="border: 1px solid;border-right:0;">
 						<!-- MODIFICA -->
-						<a href="<?=base_url()?>index.php/UpdateAttivita/<?=$att['id']?>" class='btn btn-warning'><i class="material-icons">edit</i></a>
+						<a href="UpdateAttivita/<?=$att['id']?>" class='btn btn-warning'><i class="material-icons">edit</i></a>
 					</td>
 					<td style="border: 1px solid;border-left:0;">
 						<!-- ELIMINA -->
-						<a href="<?=base_url()?>index.php/delAttivita/<?=$att['id']?>" class='btn btn-danger'><i class="material-icons">clear</i></a>
+						<a href="delAttivita/<?=$att['id']?>" class='btn btn-danger'><i class="material-icons">clear</i></a>
 					</td>
 				</tr>
 		<?php endforeach; ?>
