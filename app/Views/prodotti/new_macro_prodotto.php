@@ -87,7 +87,7 @@
 	</style>
 
 <h2><?=$title?></h2>
-<a href="MacroProducts" class="btn btn-secondary mt-3">
+<a href="<?=base_url()?>index.php/MacroProducts" class="btn btn-secondary mt-3">
 	<i class="material-icons">arrow_back</i> Indietro    
 </a>
 <br><br>

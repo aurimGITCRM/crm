@@ -87,7 +87,7 @@
 	</style>
 
 <h2><?=$title?></h2>
-<a href="<?=base_url()?>Esiti" class="btn btn-secondary mt-3 col-lg-1">
+<a href="<?=base_url()?>index.php/Esiti" class="btn btn-secondary mt-3 col-lg-1">
     	<i class="material-icons">arrow_back</i> Indietro    
 </a>
 <br><br>
