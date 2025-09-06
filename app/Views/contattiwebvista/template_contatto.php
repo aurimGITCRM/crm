@@ -2,7 +2,7 @@
 	if(sizeof($contatti) > 0)
 	{
 		?>
-		<table class="col-lg-6" id="table_contatti">
+		<table class="table col-lg-6" id="table_contatti">
 			<thead>
 				<th style="border: 1px solid;">Ragione sociale</th>
 				<th style="border: 1px solid;border-right:0;">Azioni</th>
@@ -20,7 +20,7 @@
 					</td>
 					<td style="border: 1px solid;border-left:0;">
 						<!-- ELIMINA -->
-						<a href="delContattoWebVista/<?=$contatto['contId']?>" class='btn btn-danger'><i class="material-icons">clear</i></a>
+						<a href="javascript:void(0)" onclick="if(confirm('Sei sicuro di cancellare il contatto selezionato?')){location.href='delContattoWebVista/<?=$contatto['contId']?>';}" class='btn btn-danger'><i class="material-icons">clear</i></a>
 					</td>
 				</tr>
 		<?php endforeach; ?>
