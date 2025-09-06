@@ -87,7 +87,7 @@
 	</style>
 
 <h2><?=$title?></h2>
-<a href="Attivita" class="btn btn-secondary mt-3">
+<a href="/index.php/Attivita" class="btn btn-secondary mt-3">
 	<i class="material-icons">arrow_back</i> Indietro    
 </a>
 <br><br>
