@@ -32,9 +32,9 @@ class Appointment extends BaseController
     public function testEmail()
     {
         $data_cont = $this->contmodel->get_contatto(1);
-        var_dump($data_cont);
         $emailmanager = new EmailManager();
         $template_mail = view('/email/email_presentazione_contattiwebvista',$data_cont);
+        var_dump($template_mail);
         $emailmanager->sendMail($template_mail,"AURIM - Presentazione",$data_cont['contatto']['email_1']);
     }
 

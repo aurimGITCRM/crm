@@ -27,7 +27,7 @@ class EmailManager
             'SMTPUser' => 'noreply@crmaurim.it',
             'SMTPPass' => '5BQSJkcYiG#]',
             'SMTPPort' => '465',
-            'SMTPCrypto' => 'tls',
+            'SMTPCrypto' => 'ssl',
             'mailType' => 'html',
             'charset' => 'utf-8',
             'wordWrap' => true,
@@ -36,7 +36,7 @@ class EmailManager
         $email->initialize($config);
 
         // Set email parameters
-        // $email->setFrom('app-noreply@etiqube.com', 'AURIM');
+         //$email->setFrom('app-noreply@etiqube.com', 'AURIM');
         $email->setFrom('noreply@crmaurim.it', 'AURIM');
         $email->setTo($to);
 
@@ -48,9 +48,9 @@ class EmailManager
 
         // Send email
         if ($email->send()) {
-            return 'OK';
+            echo 'OK';
         } else {
-            return 'Email not sent. Error: ' . $email->printDebugger();
+            echo 'Email not sent. Error: ' . $email->printDebugger();
         }
     }
 }
