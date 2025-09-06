@@ -85,7 +85,7 @@
 		color:red;
 	}
 
-	.macrop
+	#macrop
 	{
     	margin-left: 15px;
 	}
