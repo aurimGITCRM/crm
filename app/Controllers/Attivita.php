@@ -85,7 +85,6 @@ class Attivita extends BaseController
     public function delAttivita($id = NULL)
     {
         $this->model->delAtt($id);
-        $users = $this->model->getAttivita();
-        return view('/attivita/attivita',$users);
+        return redirect()->to('/Attivita');
     }
 }

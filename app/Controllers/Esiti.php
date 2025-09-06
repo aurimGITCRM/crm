@@ -87,12 +87,6 @@ class Esiti extends BaseController
     {
         $this->campagnemodel->delCampagneEsiti(null,$id);
         $this->model->delEsito($id);
-        $data = [];
-        $data['title'] = "Esiti";
-        $data_template = [];
-        $data_template = $this->model->getEsiti();
-        $data['template_esiti'] = view('/esiti/template_esiti',$data_template);
-        $data['template'] = view('/esiti/esiti',$data);
-        return view('layout', $data);
+        return redirect()->to('/Esiti');
     }
 }
