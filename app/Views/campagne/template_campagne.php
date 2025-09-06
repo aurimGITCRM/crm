@@ -20,11 +20,11 @@
                             <td style="border: 1px solid;"><?=$campagna['data'];?></td>
                             <td style="border: 1px solid;border-right:0;">
                                 <!-- MODIFICA -->
-                                <a href="<?=base_url()?>UpdateCampagna/<?=$campagna['campId']?>" class='btn btn-warning'><i class="material-icons">edit</i></a>
+                                <a href="UpdateCampagna/<?=$campagna['campId']?>" class='btn btn-warning'><i class="material-icons">edit</i></a>
                             </td>
                             <td style="border: 1px solid;border-left:0;">
                                 <!-- ELIMINA -->
-                                <a href="javascript:void(0)" onclick="if(confirm('Sei sicuro di cancellare la campagna selezionata?')){location.href='<?=base_url()?>delCampaign/<?=$campagna['campId']?>';}" class='btn btn-danger'><i class="material-icons">clear</i></a>
+                                <a href="javascript:void(0)" onclick="if(confirm('Sei sicuro di cancellare la campagna selezionata?')){location.href='delCampaign/<?=$campagna['campId']?>';}" class='btn btn-danger'><i class="material-icons">clear</i></a>
                             </td>
                         </tr>
                 <?php endforeach; ?>

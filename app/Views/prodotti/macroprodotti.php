@@ -108,11 +108,11 @@
 					<td style="border: 1px solid;"><?=$macro['nome'];?></td>
 					<td style="border: 1px solid;border-right:0;">
 						<!-- MODIFICA -->
-						<a href="<?=base_url()?>index.php/UpdateMacroProducts/<?=$macro['macroId']?>" class='btn btn-warning'><i class="material-icons">edit</i></a>
+						<a href="UpdateMacroProducts/<?=$macro['macroId']?>" class='btn btn-warning'><i class="material-icons">edit</i></a>
 					</td>
 					<td style="border: 1px solid;border-left:0;">
 						<!-- ELIMINA -->
-						<a href="<?=base_url()?>index.php/DeleteMacroProducts/<?=$macro['macroId']?>" class='btn btn-danger'><i class="material-icons">clear</i></a>
+						<a href="DeleteMacroProducts/<?=$macro['macroId']?>" class='btn btn-danger'><i class="material-icons">clear</i></a>
 					</td>
 				</tr>
 		<?php endforeach; ?>
