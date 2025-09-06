@@ -91,6 +91,11 @@
 <script>
 	$(document).ready(function()
 	{
+		<?php if(!empty($contatto)): ?>
+			$('#camp_ass').hide();
+			$('#com_inv').hide();
+		<?php endif; ?>
+		
 		 $('#tipologiaId_Fk').select2({
             <?php if (isset($contatto['tipologiaId_Fk']) && !empty($contatto['tipologiaId_Fk'])): ?>
                 data: [{
@@ -311,10 +316,10 @@
 		<li class="nav-item">
 			<a class="nav-link active" data-toggle="tab" href="#schedacontatto" role="tab">Scheda contatto</a>
 		</li>
-		<li class="nav-item">
+		<li class="nav-item" id="camp_ass">
 			<a class="nav-link" data-toggle="tab" href="#campagne_associate" role="tab">Campagne associate</a>
 		</li>
-		<li class="nav-item">
+		<li class="nav-item" id="com_inv">
 			<a class="nav-link" data-toggle="tab" href="#comunicazioni_inviate" role="tab">Comunicazioni inviate</a>
 		</li>
 	</ul>
