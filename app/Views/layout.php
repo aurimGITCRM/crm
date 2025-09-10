@@ -194,6 +194,7 @@
 												<li><a class="dropdown-item" onclick="location.href='Attivita';">Attività</a></li>
 												<li><a class="dropdown-item" onclick="location.href='Products';">Prodotti</a></li>
 												<li><a class="dropdown-item" onclick="location.href='ContattiWebVista';">ContattiWebVista</a></li>
+												<li><a class="dropdown-item" onclick="location.href='upload_contacts';">Carico CSV contatti</a></li>
 											</ul>
 										</li>
 									<?php else: ?>

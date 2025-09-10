@@ -24,8 +24,8 @@
                                         <?=$cu['campNome'];?>
                                     </td>
                                     <td style="border: 1px solid;border-left:0;text-align:center;">
-                                        <a href="/CampagneContattiLiberoWebVista/<?=$cu['campId'];?>"  class='btn btn-success icon-link'>Gestisci contatto <i class="material-icons">edit</i></a>
-                                        &nbsp;<a href="/CampagneContattiUtenteWebVista/<?=$cu['campId'];?>"  class='btn btn-success icon-link'>Visualizza i contatti<i class="material-icons">search</i></a>
+                                        <a href="/index.php/CampagneContattiLiberoWebVista/<?=$cu['campId'];?>"  class='btn btn-success icon-link'>Gestisci contatto <i class="material-icons">edit</i></a>
+                                        &nbsp;<a href="/index.php/CampagneContattiUtenteWebVista/<?=$cu['campId'];?>"  class='btn btn-success icon-link'>Visualizza i contatti<i class="material-icons">search</i></a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
